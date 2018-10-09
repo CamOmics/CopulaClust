@@ -1,26 +1,10 @@
----
-output:
-  md_document:
-    variant: markdown_github
----
-
-<!-- README.md is generated from README.Rmd. Please edit that file -->
-
-```{r, echo = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>",
-  fig.path = "README-"
-)
-```
-
 # CopulaClust
 
-The goal of CopulaClust is to ...
+The goal of CopulaClust is to generate Copular from multimodal MRI within tumor ROI and extract discrete features, which can be used for unsupervised clustering of patients.
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+This an example shows how to cluster artificial patient copula:
 
 ```{r example}
 Features = data.frame()
@@ -36,3 +20,4 @@ for (k in 1:50) {
 
 ClusterLable = CopulaCluster(Features, nClust = 3)
 ```
+
